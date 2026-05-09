@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SergioYin · Agent Asset Cockpit</title>
+  <meta name="description" content="A lightweight front-end cockpit for SergioYin's AI agent asset building workflow." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">SergioYin / GitHub Pages Lab</p>
+        <h1 id="page-title">Agent Asset Cockpit</h1>
+        <p class="lede">
+          一个前端展示小样：把“发现问题 → PM 定义 → Codex 实践 → 工程验收 → GitHub 资产沉淀”做成可视化操作台。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/SergioYin" target="_blank" rel="noreferrer">查看 GitHub</a>
+          <button class="button ghost" type="button" data-scroll-target="workflow">看流程</button>
+        </div>
+      </div>
+      <div class="status-card" aria-label="今日资产建设状态">
+        <div class="card-header">
+          <span class="pulse"></span>
+          <span>今日运行状态</span>
+        </div>
+        <strong id="score">82</strong>
+        <span class="score-label">PM/EM readiness score</span>
+        <ul>
+          <li>市场调查：已完成</li>
+          <li>工程实践：TDD / diagnose gate</li>
+          <li>发布目标：sergioyin.github.io</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading">
+        <p class="eyebrow">Operating Model</p>
+        <h2 id="workflow-title">PM + EM 双角色流程</h2>
+      </div>
+      <article class="tile">
+        <span class="tile-index">01</span>
+        <h3>发现问题</h3>
+        <p>跟踪 AI agent、前端开发者工具、context engineering 等方向的真实痛点和市场信号。</p>
+      </article>
+      <article class="tile">
+        <span class="tile-index">02</span>
+        <h3>定义 PRD</h3>
+        <p>明确目标用户、MVP、非目标、验收条件和传播点，低分选题不进入工程阶段。</p>
+      </article>
+      <article class="tile">
+        <span class="tile-index">03</span>
+        <h3>拉起 Codex</h3>
+        <p>把工程任务书交给 coding agent 实践，由 PM/EM 追问、验收、返工和收口。</p>
+      </article>
+      <article class="tile">
+        <span class="tile-index">04</span>
+        <h3>工程验收</h3>
+        <p>收敛任务采用 TDD、diagnose、architecture review、README 可复现命令和本地验证。</p>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="assets-title">
+      <div>
+        <p class="eyebrow">Asset Matrix</p>
+        <h2 id="assets-title">今天的小项目验收点</h2>
+        <p>
+          这个页面本身是一次轻量验证：不引入构建工具，直接静态 HTML/CSS/JS，适合 GitHub Pages 快速展示。
+        </p>
+      </div>
+      <div class="checks" role="list">
+        <span role="listitem">✓ 响应式布局</span>
+        <span role="listitem">✓ 无依赖静态站点</span>
+        <span role="listitem">✓ 前端动效</span>
+        <span role="listitem">✓ GitHub Pages 可直接发布</span>
+      </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
